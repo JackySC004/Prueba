@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{variable_servidor}}</h1>
+    <form method="post" action="/ruta2">
+        <input type="text" name="contraseña">
+        <button type="submit">Ingresar</button>
+    </form>
+
+    {% if mensaje %}
+    <p>Mensaje recibido: {{mensaje}}</p>
+    {%endif%}
+</body>
+</html>
